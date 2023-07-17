@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Basketball Scorekeeper</title>
+</head>
+
+<body>
+    <div id="board">
+        <div id="container">
+            <div id="homeSide">
+                <div id="home">HOME</div>
+                <div id="homeScore">
+                    <div id="homeScore-text">
+                        0
+                    </div>
+                </div>
+                <button class="score-btn" onclick="home1()" >+1</button>
+                <button class="score-btn" onclick="home2()" >+2</button>
+                <button class="score-btn" onclick="home3()" >+3</button>
+            </div>
+            <div id="guestSide">
+                <div id="guest">GUEST</div>
+                <div id="guestScore">
+                    <div id="guestScore-text">
+                        0
+                    </div>
+                </div>
+                <button class="score-btn" onclick="guest1()" >+1</button>
+                <button class="score-btn" onclick="guest2()" >+2</button>
+                <button class="score-btn" onclick="guest3()">+3</button>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <button id="refresh-btn" onclick="reset()">REFRESH</button>
+    </div>
+
+    <script src="app.js">
+    </script>
+</body>
+
+</html>
